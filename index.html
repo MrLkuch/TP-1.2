@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <nav class="nav">
+        <p class="nav__placeholder">Logo Placeholder </p>
+        <button class="button nav__button">Sign Up</button>
+    </nav>
+    <header class="header">
+        <div class="header__container">
+            <p class="header__container__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            <input class="input header__container__input" type="text" placeholder="Email address">
+            <button class="button">Submit</button>
+        </div>
+        
+
+        <section class="carousel" aria-label="Gallery">
+            <ol class="carousel__viewport">
+              <li id="carousel__slide1"
+                  class="carousel__slide">
+                <div class="carousel__snapper">
+                    <article class="article">
+                        <i class="fa fa-puzzle-piece fa-4x article__icon"></i>
+                        <h3 class="article__title">Lorem Ipsum</h3>
+                        <p class="article__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam venenatis, diam ut
+                            tincidunt ornare, risus mauris ornare risus, in consectetur libero justo sed justo.</p>
+                    </article>
+                </div>
+              </li>
+              <li id="carousel__slide2"
+                  class="carousel__slide">
+                <div class="carousel__snapper"></div>
+
+                <article class="article">
+                    <i class="fa fa-puzzle-piece fa-4x article__icon"></i>
+                    <h3 class="article__title">Lorem Ipsum</h3>
+                    <p class="article__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam venenatis, diam ut
+                        tincidunt ornare, risus mauris ornare risus, in consectetur libero justo sed justo.</p>
+                </article>
+                
+              </li>
+              <li id="carousel__slide3"
+                  class="carousel__slide">
+                <div class="carousel__snapper"></div>
+
+                <article class="article">
+                    <i class="fa fa-puzzle-piece fa-4x article__icon"></i>
+                    <h3 class="article__title">Lorem Ipsum</h3>
+                    <p class="article__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam venenatis, diam ut
+                        tincidunt ornare, risus mauris ornare risus, in consectetur libero justo sed justo.</p>
+                </article>
+
+              </li>
+
+            </ol>
+            
+          </section>
+    </header>
+    <div class="section_article">
+        <article class="article">
+            <i class="fa fa-puzzle-piece fa-4x article__icon"></i>
+            <h3 class="article__title">Lorem Ipsum</h3>
+            <p class="article__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam venenatis, diam ut
+                tincidunt ornare, risus mauris ornare risus, in consectetur libero justo sed justo.</p>
+        </article>
+        <article class="article">
+            <i class="fa fa-puzzle-piece fa-4x article__icon"></i>
+            <h3 class="article__title">Lorem Ipsum</h3>
+            <p class="article__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam venenatis, diam ut
+                tincidunt ornare, risus mauris ornare risus, in consectetur libero justo sed justo.</p>
+        </article>
+        <article class="article">
+            <i class="fa fa-puzzle-piece fa-4x article__icon"></i>
+            <h3 class="article__title">Lorem Ipsum</h3>
+            <p class="article__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam venenatis, diam ut
+                tincidunt ornare, risus mauris ornare risus, in consectetur libero justo sed justo.</p>
+        </article>
+    </div>
+
+    <form class="form" id="leForm">
+        <h2 class="form__title">Contact us</h2>
+        <div class="form__group">
+            <input class="input form__input" type="text" name="firstName" id="firstName" placeholder="Firstname">
+            <label class="form__error-message" for="firstName" id="firstNameError">Veuillez renseigner votre prelastName.</label>
+
+            <input class="input form__input" type="text" name="lastName" id="lastName" placeholder="Lastname">
+            <label class="form__error-message" for="lastName" id="lastNameError">Veuillez renseigner votre lastName.</label>
+        </div>
+        <div class="form__group">
+            <input class="input form__input" type="email" name="email" id="email" placeholder="Email adress">
+            <label class="form__error-message" for="email" id="emailError">Veuillez renseigner un email valide.</label>
+
+            <input class="input form__input" type="tel" name="phone" id="phone" placeholder="Phone number">
+            <label class="form__error-message" for="phone" id="phoneError">Veuillez renseigner un numéro de téléphone valide.</label>
+  
+
+        </div>
+        <textarea class="input form__input form__input--msg" cols="30" rows="10" name="message" id="message" placeholder="Type your message"></textarea>
+        <button class="button" type="submit">submit</button>
+    </form>
+
+    <footer class="footer">
+        <ul class="footer__list">
+            <li><a href="#">About</a>-</li>
+            <li><a href="#">Contact</a>-</li>
+            <li><a href="#">Terms of Use</a>-</li>
+            <li><a href="#">Privacy Policy</a></li>
+        </ul>
+        <p class="footer__text">My Website 2022 - All rights reserved</p>
+    </footer>
+
+    <script src="./app.js"></script>
+</body>
+
+</html>
