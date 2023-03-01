@@ -66,6 +66,14 @@ contactForm.addEventListener('submit', (event) => {
     if (!Object.values(errors).includes(true)) {
         console.log(formData);
         contactForm.reset();
+
+        axios.post("http://212.83.176.255:3030/contact", formData,{
+
+        })
+
+        .then(function (response){
+            console.log(response.data.message);
+        })
     }
 
 
