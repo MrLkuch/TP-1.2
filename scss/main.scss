@@ -133,9 +133,27 @@ body {
         
     }
 
+    #carousel_article{
+        display: flex;
+        justify-content: center;
+    }
+
+    #previous{
+        margin: 10px;
+        display: flex;
+        justify-content: center;
+    }
+
+    #next{
+        margin: 10px;
+        display: flex;
+        justify-content: center;
+
+    }
+
     .section_article{
         display: none;
-
+        align-items: center;
         
     }
 
@@ -213,7 +231,6 @@ body {
     }   
     .section_article{
         display: flex !important;
-        flex-wrap: wrap;
         justify-content: center;
         margin-bottom: 150px;
 
@@ -267,7 +284,7 @@ body {
     }
 
     .section_article{
-
+        display: flex !important;
         justify-content: center;
         flex-wrap: nowrap;
 

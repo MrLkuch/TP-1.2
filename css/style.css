@@ -102,8 +102,23 @@ body .header .carousel__snapper {
   height: 100%;
   scroll-snap-align: center;
 }
+body #carousel_article {
+  display: flex;
+  justify-content: center;
+}
+body #previous {
+  margin: 10px;
+  display: flex;
+  justify-content: center;
+}
+body #next {
+  margin: 10px;
+  display: flex;
+  justify-content: center;
+}
 body .section_article {
   display: none;
+  align-items: center;
 }
 body .form {
   display: flex;
@@ -166,7 +181,6 @@ body .footer__text {
   }
   .section_article {
     display: flex !important;
-    flex-wrap: wrap;
     justify-content: center;
     margin-bottom: 150px;
   }
@@ -200,6 +214,7 @@ body .footer__text {
     width: 50% !important;
   }
   .section_article {
+    display: flex !important;
     justify-content: center;
     flex-wrap: nowrap;
   }

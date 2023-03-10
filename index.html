@@ -21,52 +21,63 @@
             <input class="input header__container__input" type="text" placeholder="Email address">
             <button class="button">Submit</button>
         </div>
-        
+
+
+
 
         <section class="carousel" aria-label="Gallery">
             <ol class="carousel__viewport">
-              <li id="carousel__slide1"
-                  class="carousel__slide">
-                <div class="carousel__snapper">
+                <li id="carousel__slide1" class="carousel__slide">
+                    <div class="carousel__snapper">
+                        <article class="article">
+                            <i class="fa fa-puzzle-piece fa-4x article__icon"></i>
+                            <h3 class="article__title">Lorem Ipsum</h3>
+                            <p class="article__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam
+                                venenatis, diam ut
+                                tincidunt ornare, risus mauris ornare risus, in consectetur libero justo sed justo.</p>
+                        </article>
+                    </div>
+                </li>
+                <li id="carousel__slide2" class="carousel__slide">
+                    <div class="carousel__snapper"></div>
+
                     <article class="article">
                         <i class="fa fa-puzzle-piece fa-4x article__icon"></i>
                         <h3 class="article__title">Lorem Ipsum</h3>
-                        <p class="article__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam venenatis, diam ut
+                        <p class="article__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam
+                            venenatis, diam ut
                             tincidunt ornare, risus mauris ornare risus, in consectetur libero justo sed justo.</p>
                     </article>
-                </div>
-              </li>
-              <li id="carousel__slide2"
-                  class="carousel__slide">
-                <div class="carousel__snapper"></div>
 
-                <article class="article">
-                    <i class="fa fa-puzzle-piece fa-4x article__icon"></i>
-                    <h3 class="article__title">Lorem Ipsum</h3>
-                    <p class="article__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam venenatis, diam ut
-                        tincidunt ornare, risus mauris ornare risus, in consectetur libero justo sed justo.</p>
-                </article>
-                
-              </li>
-              <li id="carousel__slide3"
-                  class="carousel__slide">
-                <div class="carousel__snapper"></div>
+                </li>
+                <li id="carousel__slide3" class="carousel__slide">
+                    <div class="carousel__snapper"></div>
 
-                <article class="article">
-                    <i class="fa fa-puzzle-piece fa-4x article__icon"></i>
-                    <h3 class="article__title">Lorem Ipsum</h3>
-                    <p class="article__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam venenatis, diam ut
-                        tincidunt ornare, risus mauris ornare risus, in consectetur libero justo sed justo.</p>
-                </article>
+                    <article class="article">
+                        <i class="fa fa-puzzle-piece fa-4x article__icon"></i>
+                        <h3 class="article__title">Lorem Ipsum</h3>
+                        <p class="article__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam
+                            venenatis, diam ut
+                            tincidunt ornare, risus mauris ornare risus, in consectetur libero justo sed justo.</p>
+                    </article>
 
-              </li>
+                </li>
 
             </ol>
-            
-          </section>
+
+        </section>
     </header>
     <div class="section_article">
-        <article class="article">
+
+        <button id="previous">&lt;</button>
+        <div id="carousel_article">
+
+
+        </div>
+        <button id="next">&gt;</button>
+
+
+        <!-- <article class="article">
             <i class="fa fa-puzzle-piece fa-4x article__icon"></i>
             <h3 class="article__title">Lorem Ipsum</h3>
             <p class="article__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam venenatis, diam ut
@@ -83,29 +94,33 @@
             <h3 class="article__title">Lorem Ipsum</h3>
             <p class="article__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam venenatis, diam ut
                 tincidunt ornare, risus mauris ornare risus, in consectetur libero justo sed justo.</p>
-        </article>
+        </article> -->
     </div>
 
     <form class="form" id="leForm" method="post" action="traintement.php">
         <h2 class="form__title">Contact us</h2>
         <div class="form__group">
             <input class="input form__input" type="text" name="firstName" id="firstName" placeholder="Firstname">
-            <label class="form__error-message" for="firstName" id="firstNameError">Veuillez renseigner votre prelastName.</label>
+            <label class="form__error-message" for="firstName" id="firstNameError">Veuillez renseigner votre
+                prelastName.</label>
 
             <input class="input form__input" type="text" name="lastName" id="lastName" placeholder="Lastname">
-            <label class="form__error-message" for="lastName" id="lastNameError">Veuillez renseigner votre lastName.</label>
+            <label class="form__error-message" for="lastName" id="lastNameError">Veuillez renseigner votre
+                lastName.</label>
         </div>
         <div class="form__group">
-            
+
             <input class="input form__input" type="email" name="email" id="email" placeholder="Email adress">
             <label class="form__error-message" for="email" id="emailError">Veuillez renseigner un email valide.</label>
 
             <input class="input form__input" type="tel" name="phone" id="phone" placeholder="Phone number">
-            <label class="form__error-message" for="phone" id="phoneError">Veuillez renseigner un numéro de téléphone valide.</label>
-  
+            <label class="form__error-message" for="phone" id="phoneError">Veuillez renseigner un numéro de téléphone
+                valide.</label>
+
 
         </div>
-        <textarea class="input form__input form__input--msg" cols="30" rows="10" name="message" id="message" placeholder="Type your message"></textarea>
+        <textarea class="input form__input form__input--msg" cols="30" rows="10" name="message" id="message"
+            placeholder="Type your message"></textarea>
         <button class="button" type="submit">submit</button>
     </form>
 

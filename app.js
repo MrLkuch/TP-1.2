@@ -1,3 +1,105 @@
+// carousel article
+
+class Carrousel {
+    constructor(articles, htmlId) {
+        this.articles = articles;
+        this.htmlId = htmlId;
+        this.carrouselArticleContainer = document.getElementById(htmlId)
+        this.indexActuel = 0;
+        this.CarrouselElement = document.createElement('p');
+        this.display();
+    }
+
+    display = () => {
+
+        this.carrouselArticleContainer.innerHTML = "";
+
+        const article = this.articles[this.indexActuel] ;     
+
+        const articleContainer = document.createElement('article');
+        articleContainer.classList.add('article');
+
+        const articleIcone = document.createElement('i');
+
+        articleIcone.classList.add('fa-4x');
+        articleIcone.classList.add('fa');
+        articleIcone.classList.add(article.icone);
+        articleIcone.classList.add('article__icon');
+
+        const articleContent = document.createElement('div');
+        articleContent.classList.add('articles__box__texte');
+
+        const articleTitle = document.createElement('h3');
+        articleTitle.classList.add('article__title');
+        articleTitle.textContent = article.titre;
+
+        const articleP = document.createElement('p');
+        articleP.classList.add('articles__box__texte__p');
+        articleP.textContent = article.contenu;
+
+        this.carrouselArticleContainer.appendChild(articleContainer);
+
+        articleContainer.appendChild(articleIcone);
+        articleContainer.appendChild(articleContent);
+        articleContent.appendChild(articleTitle);
+        articleContent.appendChild(articleP);
+
+    }
+
+    suivant = () => {
+        if (!this.articles[this.indexActuel + 1]) {
+            this.indexActuel = 0;
+        } else {
+            this.indexActuel += 1;
+        }
+        this.display();
+    }
+
+    precedent = () => {
+        if (!this.articles[this.indexActuel - 1]) {
+            this.indexActuel = this.articles.length - 1;
+        } else {
+            this.indexActuel -= 1 ;
+        }
+        this.display()
+    }
+}
+
+const articlesArray = [
+    {
+        icone: "fa-puzzle-piece",
+        titre: "Article A",
+        contenu: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam venenatis, diam ut tincidunt ornare, risus mauris ornare risus, in consectetur libero justo sed justo."
+    },
+    {
+        icone: "fa-puzzle-piece",
+        titre: "Article B",
+        contenu: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam venenatis, diam ut tincidunt ornare, risus mauris ornare risus, in consectetur libero justo sed justo."
+    },
+    {
+        icone: "fa-puzzle-piece",
+        titre: "Article C",
+        contenu: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam venenatis, diam ut tincidunt ornare, risus mauris ornare risus, in consectetur libero justo sed justo."
+    },
+
+]
+
+const carrousel1 = new Carrousel(articlesArray, "carousel_article");
+
+const previousArrow = document.getElementById('previous');
+const nextArrow = document.getElementById('next');
+
+previousArrow.addEventListener('click', () => carrousel1.precedent());
+nextArrow.addEventListener('click', () => carrousel1.suivant())
+
+
+
+
+
+
+
+// formulaire
+
 
 const contactForm = document.getElementById('leForm');
 
