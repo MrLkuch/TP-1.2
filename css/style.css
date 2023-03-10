@@ -52,6 +52,54 @@ body .header {
   border-bottom-right-radius: 50px;
   margin-bottom: 25px;
   background-position: center;
+  /*    .carousel{
+
+          position: relative;
+          padding-top: 75%;
+          filter: drop-shadow(0 0 10px #0003);
+           perspective: 100px;
+
+
+          ol, li {
+              list-style: none;
+              margin: 0;
+              padding: 0;
+          }
+
+          &__viewport {
+              position: absolute;
+              top: 0;
+              right: 0;
+              bottom: 0;
+              left: 0;
+              display: flex;
+              overflow-x: scroll;
+              counter-reset: item;
+              scroll-behavior: smooth;
+              scroll-snap-type: x mandatory;
+          }
+
+          &__slide {
+              position: relative;
+              flex: 0 0 100%;
+              width: 100%;
+              background-color:  rgba(217, 217, 217, 0.5);
+              border-radius:25px;
+
+          }
+
+          &__snapper {
+              position: absolute;
+              top: 0;
+              left: 0;
+              width: 100%;
+              height: 100%;
+              scroll-snap-align: center;
+          }
+
+
+
+      }*/
 }
 body .header__container {
   margin-bottom: 25px;
@@ -63,44 +111,6 @@ body .header__container__text {
 }
 body .header__container__input {
   margin: 25px;
-}
-body .header .carousel {
-  position: relative;
-  padding-top: 75%;
-  filter: drop-shadow(0 0 10px rgba(0, 0, 0, 0.2));
-  perspective: 100px;
-}
-body .header .carousel ol, body .header .carousel li {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-}
-body .header .carousel__viewport {
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  display: flex;
-  overflow-x: scroll;
-  counter-reset: item;
-  scroll-behavior: smooth;
-  scroll-snap-type: x mandatory;
-}
-body .header .carousel__slide {
-  position: relative;
-  flex: 0 0 100%;
-  width: 100%;
-  background-color: rgba(217, 217, 217, 0.5);
-  border-radius: 25px;
-}
-body .header .carousel__snapper {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  scroll-snap-align: center;
 }
 body #carousel_article {
   display: flex;
